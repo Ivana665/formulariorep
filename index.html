@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción Curso</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulario de Inscripción Curso</h2>
+        <p class="subtitle">Rellene cuidadosamente el formulario de inscripción</p>
+
+        <form action="#" method="POST">
+            
+            <!-- Nombre del alumno -->
+            <div class="form-group">
+                <label>Nombre del alumno</label>
+                <div class="row-3">
+                    <div class="input-col">
+                        <input type="text" required>
+                        <small>Nombre</small>
+                    </div>
+                    <div class="input-col">
+                        <input type="text">
+                        <small>Segundo Nombre</small>
+                    </div>
+                    <div class="input-col">
+                        <input type="text" required>
+                        <small>Apellido</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fecha de nacimiento y Género -->
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>Fecha de nacimiento</label>
+                    <div class="input-with-icon">
+                        <input type="date">
+                    </div>
+                    <small>Fecha</small>
+                </div>
+                <div class="form-group half">
+                    <label>Género</label>
+                    <select>
+                        <option value="" disabled selected></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Dirección -->
+            <div class="form-group">
+                <label>Dirección</label>
+                <input type="text" placeholder="" style="margin-bottom: 5px;">
+                <small>Dirección de la calle</small>
+            </div>
+
+            <div class="form-group" style="margin-top: 10px;">
+                <input type="text" placeholder="" style="margin-bottom: 5px;">
+                <small>Dirección de la calle Línea 2</small>
+            </div>
+
+            <div class="form-row address-row">
+                <div class="form-group third">
+                    <input type="text">
+                    <small>Ciudad</small>
+                </div>
+                <div class="form-group third">
+                    <input type="text">
+                    <small>Estado / Provincia</small>
+                </div>
+                <div class="form-group third postal">
+                    <input type="text">
+                    <small>Código Postal</small>
+                </div>
+            </div>
+
+            <!-- Email y Número de teléfono -->
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div class="form-group half">
+                    <label>Número de teléfono</label>
+                    <input type="tel">
+                </div>
+            </div>
+
+            <!-- ¿Ha recibido otros cursos anteriormente? -->
+            <div class="form-group">
+                <label>Ha recibido otros cursos Anteriormente</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="cursos_previos" value="si"> Sí</label>
+                    <label><input type="radio" name="cursos_previos" value="no"> No</label>
+                </div>
+            </div>
+
+            <!-- Empresa y Cursos -->
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>Empresa</label>
+                    <input type="text">
+                </div>
+                <div class="form-group half">
+                    <label>Cursos</label>
+                    <select>
+                        <option value="" disabled selected></option>
+                        <option value="curso1">Curso 1</option>
+                        <option value="curso2">Curso 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Comentarios adicionales -->
+            <div class="form-group">
+                <label>Comentarios adicionales</label>
+                <textarea rows="4"></textarea>
+            </div>
+
+            <!-- Botón Enviar -->
+            <div class="form-submit">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
